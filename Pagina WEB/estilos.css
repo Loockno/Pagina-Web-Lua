@@ -1,7 +1,8 @@
 body {
   margin: 0;
 }
-header, footer {
+header,
+footer {
   background-color: #242222;
 }
 .Bnavegación {
@@ -68,13 +69,13 @@ header, footer {
   width: 100%;
 }
 .Titulo h2 {
-    font-size: 65px;
-    font-weight: 700;
-    text-align: justify;
-    font-family: serif;
+  font-size: 65px;
+  font-weight: 700;
+  text-align: justify;
+  font-family: serif;
 }
 .Pmezcales {
-  background-color: #D9D9D9;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,16 +85,21 @@ header, footer {
   width: 100%;
 }
 .Pmezcales .productos {
+  margin-top: 5%;
   flex-direction: row;
   display: flex;
 }
 .Pmezcales .productos .carta {
   text-align: center;
 }
-.Pmezcales .productos .carta p, h3 {
-    font-family: serif;
-    font-size: 1.5em;
-    font-weight: 500;
+.Pmezcales .productos .carta p,
+h3 {
+  font-family: serif;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.Pmezcales .Bmostrar {
+  margin-bottom: 2%;
 }
 .Redes {
   margin: 0%;
@@ -112,85 +118,99 @@ header, footer {
   font-family: serif;
   line-height: 0.1;
 }
-
-.nosotros{
+.nosotros {
   display: flex;
   flex-direction: column;
   height: 1659px;
   width: 100%;
   background-color: white;
 }
-
-.nosotros .titulo{
+.nosotros .titulo {
   display: flex;
   justify-content: center;
   margin: 0%;
   width: 100%;
 }
-
-.nosotros h1{
+.nosotros h1 {
   font-size: 65px;
   font-weight: 700;
   text-align: justify;
   font-family: serif;
 }
-
-.estrellas{
+.estrellas {
   margin-bottom: 10px;
   height: 40px;
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
-
-.informacion{
+.informacion {
   height: auto;
   width: 100%;
 }
-
-.informacion p{
+.informacion p {
   margin-right: 60px;
   margin-left: 60px;
   text-align: justify;
   font-size: 30px;
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
 }
-
-.informacion img{
+.informacion img {
   text-align: center;
   margin: auto;
   display: block;
 }
-
-.ubicacion{
-  display:flex;
+.ubicacion {
+  display: flex;
   flex-direction: row;
-  justify-content: space-around;  
+  justify-content: space-around;
   margin-top: 110px;
   height: auto;
   width: 100%;
 }
-
-.ubicacion .direccion{
+.ubicacion .direccion {
   margin-left: 60px;
 }
-.ubicacion .direccion h2{
+.ubicacion .direccion h2 {
   text-align: justify;
   font-size: 30px;
-  font-family: 'Playfair Display';
-
+  font-family: "Playfair Display";
 }
-
-.ubicacion .direccion p{
+.ubicacion .direccion p {
   text-align: justify;
   font-size: 30px;
-  font-family: 'Playfair Display';
-  color:#7E7267;
-  margin-right: 200px;  
+  font-family: "Playfair Display";
+  color: #7e7267;
+  margin-right: 200px;
 }
 
-.ubicacion .mapa{
+.ubicacion .mapa {
   margin-right: 60px;
-  margin-top:20px;
+  margin-top: 20px;
 }
-
+.Pmezcales2 {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0%;
+  width: 100%;
+}
+.Pmezcales2 .productos {
+  margin-top: 5%;
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.Pmezcales2 .productos .carta {
+  text-align: center;
+}
+.Pmezcales2 .productos .carta p, h3 {
+    font-family: serif;
+    font-size: 1em;
+    font-weight: 500;
+}
+.Pmezcales2 .Bmostrar {
+  margin-bottom: 2%;
+}
