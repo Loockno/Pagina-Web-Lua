@@ -112,3 +112,85 @@ header, footer {
   font-family: serif;
   line-height: 0.1;
 }
+
+.nosotros{
+  display: flex;
+  flex-direction: column;
+  height: 1659px;
+  width: 100%;
+  background-color: white;
+}
+
+.nosotros .titulo{
+  display: flex;
+  justify-content: center;
+  margin: 0%;
+  width: 100%;
+}
+
+.nosotros h1{
+  font-size: 65px;
+  font-weight: 700;
+  text-align: justify;
+  font-family: serif;
+}
+
+.estrellas{
+  margin-bottom: 10px;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.informacion{
+  height: auto;
+  width: 100%;
+}
+
+.informacion p{
+  margin-right: 60px;
+  margin-left: 60px;
+  text-align: justify;
+  font-size: 30px;
+  font-family: 'Playfair Display';
+}
+
+.informacion img{
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+.ubicacion{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;  
+  margin-top: 110px;
+  height: auto;
+  width: 100%;
+}
+
+.ubicacion .direccion{
+  margin-left: 60px;
+}
+.ubicacion .direccion h2{
+  text-align: justify;
+  font-size: 30px;
+  font-family: 'Playfair Display';
+
+}
+
+.ubicacion .direccion p{
+  text-align: justify;
+  font-size: 30px;
+  font-family: 'Playfair Display';
+  color:#7E7267;
+  margin-right: 200px;  
+}
+
+.ubicacion .mapa{
+  margin-right: 60px;
+  margin-top:20px;
+}
+
