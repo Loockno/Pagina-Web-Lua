@@ -5,6 +5,7 @@ header,
 footer {
   background-color: #242222;
 }
+/* navegacion.html */
 .menu {
   display: flex;
   justify-content: space-evenly;
@@ -27,6 +28,7 @@ footer {
   justify-content: space-evenly;
   margin-right: 1%;
 }
+/* index.html */
 .Eslogan {
   height: 500px;
   width: 100%;
@@ -129,6 +131,7 @@ h3 {
   margin: 0%;
   padding: 0%;
 }
+/* footer.html */
 .Redes {
   margin: 0%;
   margin-top: 4%;
@@ -147,6 +150,7 @@ h3 {
   font-family: serif;
   line-height: 0.1;
 }
+/* nosotros.html */
 .nosotros {
   display: flex;
   flex-direction: column;
@@ -217,7 +221,8 @@ h3 {
   margin-right: 60px;
   margin-top: 20px;
 }
-.Pmezcales2 {
+/* productos.html */
+.contenedor-productos {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -225,22 +230,23 @@ h3 {
   margin: 0%;
   width: 100%;
 }
-.Pmezcales2 .productos {
-  margin-top: 5%;
+.contenedor-productos .fila-productos {
+  background-color: #ffffff;
+  margin-top: 2%;
   flex-direction: row;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
 }
-.Pmezcales2 .productos .carta {
+.contenedor-productos .fila-productos .carta {
   text-align: center;
 }
-.Pmezcales2 .productos .carta p,
+.contenedor-productos .fila-productos .carta p,
 h3 {
   font-family: serif;
   font-size: 1em;
   font-weight: 500;
 }
-.Pmezcales2 .boton-mostrar-mas {
+.contenedor-productos .boton-mostrar-mas {
   margin-bottom: 2%;
 }
