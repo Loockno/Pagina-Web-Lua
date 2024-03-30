@@ -65,20 +65,6 @@
     </div>
   </section>
   <footer>
-    <div class="Redes">
-      <img src="imagenes/logoFooter.svg" alt="">
-      <div class="Contacto">
-        <p>CONTÁCTO</p>
-        <p>CEL - 4435954101</p>
-        <p>CORREO - contacto@mezcalion.com</p>
-      </div>
-      <div class="Paginas">
-        <p>PRODUCTOS</p>
-        <p>NOSOTROS</p>
-        <p>LOGIN</p>
-        <p>CARRITO</p>
-      </div>
-      <img src="imagenes/paypal-credit-card.svg" alt="">
   </footer>
   <script>
     fetch('navegacion.html')
@@ -87,6 +73,18 @@
         const header = document.querySelector('header');
         if (header) {
           header.innerHTML = text;
+        } else {
+          const body = document.querySelector('body');
+          body.insertAdjacentHTML('afterbegin', text);
+        }
+      })
+      .catch(error => console.error(error));
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(text => {
+        const footer = document.querySelector('footer');
+        if (footer) {
+          footer.innerHTML = text;
         } else {
           const body = document.querySelector('body');
           body.insertAdjacentHTML('afterbegin', text);

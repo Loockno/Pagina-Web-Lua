@@ -5,7 +5,7 @@ header,
 footer {
   background-color: #242222;
 }
-.Bnavegación {
+.menu {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -74,7 +74,7 @@ footer {
   margin: 0%;
   padding: 0%;
 }
-.Pmezcales {
+.productos-mezcales {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -83,25 +83,25 @@ footer {
   margin: 0%;
   width: 100%;
 }
-.Pmezcales .productos {
+.productos-mezcales .productos {
   flex-direction: row;
   display: flex;
   margin-bottom: 1%;
 }
-.Pmezcales .productos .carta {
+.productos-mezcales .productos .carta {
   text-align: center;
 }
-.Pmezcales .productos .carta p,
+.productos-mezcales .productos .carta p,
 h3 {
   font-family: serif;
   font-size: 1.5em;
   font-weight: 500;
 }
-.Pmezcales .Bmostrar {
+.productos-mezcales .boton-mostrar-mas {
   margin: 0%;
   padding: 0%;
 }
-.Pcocteles {
+.productos-cocteles {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -111,21 +111,21 @@ h3 {
   padding: 0%;
   width: 100%;
 }
-.Pcocteles .productos {
+.productos-cocteles .productos {
   flex-direction: row;
   display: flex;
   margin-bottom: 1%;
 }
-.Pcocteles .productos .carta {
+.productos-cocteles .productos .carta {
   text-align: center;
 }
-.Pcocteles .productos .carta p,
+.productos-cocteles .productos .carta p,
 h3 {
   font-family: serif;
   font-size: 1.5em;
   font-weight: 500;
 }
-.Pcocteles .Bmostrar {
+.productos-cocteles .boton-mostrar-mas {
   margin: 0%;
   padding: 0%;
 }
@@ -241,6 +241,6 @@ h3 {
   font-size: 1em;
   font-weight: 500;
 }
-.Pmezcales2 .Bmostrar {
+.Pmezcales2 .boton-mostrar-mas {
   margin-bottom: 2%;
 }

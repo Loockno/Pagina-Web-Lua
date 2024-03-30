@@ -11,22 +11,22 @@
 <body>
   <header>
   </header>
-  <section class="Inicio">
-    <div class="Eslogan">
+  <main>
+    <article class="Eslogan">
       <img src="imagenes/magueyes.jpeg" alt="Image 9" />
       <h1>LA ESENCIA DE MÉXICO EN UNA BOTELLA.</h1>
       <p>
         Nuestro asistente personal está aquí para ayudarte, descubre mezclas
         personalizadas y recetas de cócteles adaptadas a tus gustos.
       </p>
-    </div>
-  </section>
-  <section class="Productos">
+    </article>
+  </main>
+  <section>
     <div class="Titulo">
       <h2>EL MEZCAL</h2>
     </div>
-    <div class="Pmezcales">
-      <div class="productos">
+    <div class="productos-mezcales">
+      <article class="productos">
         <div class="carta">
           <img src="imagenes/botella.png" alt="Image 10" />
           <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
@@ -42,35 +42,36 @@
           <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
           <p>Agotado</p>
         </div>
-      </div>
-      <div class="productos">
-        <div class="carta">
-          <img src="imagenes/botella.png" alt="Image 10" />
-          <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
-          <p>Agotado</p>
+      </article>
+      <div class="productos-mezcales">
+        <article class="productos">
+          <div class="carta">
+            <img src="imagenes/botella.png" alt="Image 10" />
+            <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
+            <p>Agotado</p>
+          </div>
+          <div class="carta">
+            <img src="imagenes/botella.png" alt="Image 11" />
+            <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
+            <p>Agotado</p>
+          </div>
+          <div class="carta">
+            <img src="imagenes/botella.png" alt="Image 12" />
+            <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
+            <p>Agotado</p>
+          </div>
+        </article>
+        <div class="boton-mostrar-mas">
+          <img src="imagenes/botonMostrarMás.svg" alt="" />
         </div>
-        <div class="carta">
-          <img src="imagenes/botella.png" alt="Image 11" />
-          <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
-          <p>Agotado</p>
-        </div>
-        <div class="carta">
-          <img src="imagenes/botella.png" alt="Image 12" />
-          <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
-          <p>Agotado</p>
-        </div>
       </div>
-      <div class="Bmostrar">
-        <img src="imagenes/botonMostrarMás.svg" alt="" />
-      </div>
-    </div>
   </section>
-  <section class="Cocteles">
+  <section>
     <div class="Titulo">
       <h2>COCTELES</h2>
     </div>
-    <div class="Pcocteles">
-      <div class="productos">
+    <div class="productos-cocteles">
+      <article class="productos">
         <div class="carta">
           <img src="imagenes/coctal 1.png" alt="Image 10" />
           <h3>Fresa y humo</h3>
@@ -83,27 +84,13 @@
           <img src="imagenes/coctal 1.png" alt="Image 12" />
           <h3>Fresa y humo</h3>
         </div>
-      </div>
-      <div class="Bmostrar">
+      </article>
+      <div class="boton-mostrar-mas">
         <img src="imagenes/botonMostrarMás.svg" alt="" />
       </div>
     </div>
   </section>
   <footer>
-    <div class="Redes">
-      <img src="imagenes/logoFooter.svg" alt="">
-      <div class="Contacto">
-        <p>CONTÁCTO</p>
-        <p>CEL - 4435954101</p>
-        <p>CORREO - contacto@mezcalion.com</p>
-      </div>
-      <div class="Paginas">
-        <p>PRODUCTOS</p>
-        <p>NOSOTROS</p>
-        <p>LOGIN</p>
-        <p>CARRITO</p>
-      </div>
-      <img src="imagenes/paypal-credit-card.svg" alt="">
   </footer>
   <script>
     fetch('navegacion.html')
@@ -112,6 +99,18 @@
         const header = document.querySelector('header');
         if (header) {
           header.innerHTML = text;
+        } else {
+          const body = document.querySelector('body');
+          body.insertAdjacentHTML('afterbegin', text);
+        }
+      })
+      .catch(error => console.error(error));
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(text => {
+        const footer = document.querySelector('footer');
+        if (footer) {
+          footer.innerHTML = text;
         } else {
           const body = document.querySelector('body');
           body.insertAdjacentHTML('afterbegin', text);
