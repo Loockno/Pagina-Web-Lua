@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inicio</title>
-  <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
 </head>
 
 <body>
@@ -13,7 +13,7 @@
   </header>
   <main>
     <article class="Eslogan">
-      <img src="imagenes/magueyes.jpeg" alt="Image 9" />
+      <img src="img/magueyes.jpeg" alt="Image 9" />
       <h1>LA ESENCIA DE MÉXICO EN UNA BOTELLA.</h1>
       <p>
         Nuestro asistente personal está aquí para ayudarte, descubre mezclas
@@ -28,17 +28,17 @@
     <div class="productos-mezcales">
       <article class="productos">
         <div class="carta">
-          <img src="imagenes/botella.png" alt="Image 10" />
+          <img src="img/botella.png" alt="Image 10" />
           <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
           <p>Agotado</p>
         </div>
         <div class="carta">
-          <img src="imagenes/botella.png" alt="Image 11" />
+          <img src="img/botella.png" alt="Image 11" />
           <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
           <p>Agotado</p>
         </div>
         <div class="carta">
-          <img src="imagenes/botella.png" alt="Image 12" />
+          <img src="img/botella.png" alt="Image 12" />
           <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
           <p>Agotado</p>
         </div>
@@ -46,23 +46,23 @@
       <div class="productos-mezcales">
         <article class="productos">
           <div class="carta">
-            <img src="imagenes/botella.png" alt="Image 10" />
+            <img src="img/botella.png" alt="Image 10" />
             <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
             <p>Agotado</p>
           </div>
           <div class="carta">
-            <img src="imagenes/botella.png" alt="Image 11" />
+            <img src="img/botella.png" alt="Image 11" />
             <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
             <p>Agotado</p>
           </div>
           <div class="carta">
-            <img src="imagenes/botella.png" alt="Image 12" />
+            <img src="img/botella.png" alt="Image 12" />
             <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
             <p>Agotado</p>
           </div>
         </article>
         <div class="boton-mostrar-mas">
-          <img src="imagenes/botonMostrarMás.svg" alt="" />
+          <img src="img/botonMostrarMás.svg" alt="" />
         </div>
       </div>
   </section>
@@ -73,51 +73,26 @@
     <div class="productos-cocteles">
       <article class="productos">
         <div class="carta">
-          <img src="imagenes/coctal 1.png" alt="Image 10" />
+          <img src="img/coctal 1.png" alt="Image 10" />
           <h3>Fresa y humo</h3>
         </div>
         <div class="carta">
-          <img src="imagenes/coctal 1.png" alt="Image 11" />
+          <img src="img/coctal 1.png" alt="Image 11" />
           <h3>Fresa y humo</h3>
         </div>
         <div class="carta">
-          <img src="imagenes/coctal 1.png" alt="Image 12" />
+          <img src="img/coctal 1.png" alt="Image 12" />
           <h3>Fresa y humo</h3>
         </div>
       </article>
       <div class="boton-mostrar-mas">
-        <img src="imagenes/botonMostrarMás.svg" alt="" />
+        <img src="img/botonMostrarMás.svg" alt="" />
       </div>
     </div>
   </section>
   <footer>
   </footer>
-  <script>
-    fetch('navegacion.html')
-      .then(response => response.text())
-      .then(text => {
-        const header = document.querySelector('header');
-        if (header) {
-          header.innerHTML = text;
-        } else {
-          const body = document.querySelector('body');
-          body.insertAdjacentHTML('afterbegin', text);
-        }
-      })
-      .catch(error => console.error(error));
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(text => {
-        const footer = document.querySelector('footer');
-        if (footer) {
-          footer.innerHTML = text;
-        } else {
-          const body = document.querySelector('body');
-          body.insertAdjacentHTML('afterbegin', text);
-        }
-      })
-      .catch(error => console.error(error));
-  </script>
+  <script src="js/barras de navegacion.js"></script>
 </body>
 
 </html>

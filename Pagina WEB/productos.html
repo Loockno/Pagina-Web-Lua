@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
   <title>Prodcutos</title>
 </head>
 
@@ -15,103 +15,78 @@
     <div class="Pmezcales2">
       <div class="productos">
         <div class="carta">
-          <img src="imagenes/botella-Ejemplo 2.png" alt="Image 10" />
+          <img src="img/botella-Ejemplo 2.png" alt="Image 10" />
           <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
           <p>Agotado</p>
         </div>
         <div class="carta">
-          <img src="imagenes/botella-Ejemplo 2.png" alt="Image 10" />
+          <img src="img/botella-Ejemplo 2.png" alt="Image 10" />
           <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
           <p>Agotado</p>
         </div>
         <div class="carta">
-          <img src="imagenes/botella-Ejemplo 2.png" alt="Image 11" />
+          <img src="img/botella-Ejemplo 2.png" alt="Image 11" />
           <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
           <p>Agotado</p>
         </div>
         <div class="carta">
-          <img src="imagenes/botella-Ejemplo 2.png" alt="Image 12" />
-          <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
-          <p>Agotado</p>
-        </div>
-      </div>
-      <div class="productos">
-        <div class="carta">
-          <img src="imagenes/botella-Ejemplo 2.png" alt="Image 10" />
-          <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
-          <p>Agotado</p>
-        </div>
-        <div class="carta">
-          <img src="imagenes/botella-Ejemplo 2.png" alt="Image 10" />
-          <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
-          <p>Agotado</p>
-        </div>
-        <div class="carta">
-          <img src="imagenes/botella-Ejemplo 2.png" alt="Image 11" />
-          <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
-          <p>Agotado</p>
-        </div>
-        <div class="carta">
-          <img src="imagenes/botella-Ejemplo 2.png" alt="Image 12" />
+          <img src="img/botella-Ejemplo 2.png" alt="Image 12" />
           <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
           <p>Agotado</p>
         </div>
       </div>
       <div class="productos">
         <div class="carta">
-          <img src="imagenes/botella-Ejemplo 2.png" alt="Image 10" />
+          <img src="img/botella-Ejemplo 2.png" alt="Image 10" />
           <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
           <p>Agotado</p>
         </div>
         <div class="carta">
-          <img src="imagenes/botella-Ejemplo 2.png" alt="Image 10" />
+          <img src="img/botella-Ejemplo 2.png" alt="Image 10" />
           <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
           <p>Agotado</p>
         </div>
         <div class="carta">
-          <img src="imagenes/botella-Ejemplo 2.png" alt="Image 11" />
+          <img src="img/botella-Ejemplo 2.png" alt="Image 11" />
           <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
           <p>Agotado</p>
         </div>
         <div class="carta">
-          <img src="imagenes/botella-Ejemplo 2.png" alt="Image 12" />
+          <img src="img/botella-Ejemplo 2.png" alt="Image 12" />
+          <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
+          <p>Agotado</p>
+        </div>
+      </div>
+      <div class="productos">
+        <div class="carta">
+          <img src="img/botella-Ejemplo 2.png" alt="Image 10" />
+          <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
+          <p>Agotado</p>
+        </div>
+        <div class="carta">
+          <img src="img/botella-Ejemplo 2.png" alt="Image 10" />
+          <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
+          <p>Agotado</p>
+        </div>
+        <div class="carta">
+          <img src="img/botella-Ejemplo 2.png" alt="Image 11" />
+          <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
+          <p>Agotado</p>
+        </div>
+        <div class="carta">
+          <img src="img/botella-Ejemplo 2.png" alt="Image 12" />
           <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
           <p>Agotado</p>
         </div>
       </div>
       <div class="Bmostrar">
-        <img src="imagenes/botonMostrarMás.svg" alt="" />
+        <img src="img/botonMostrarMás.svg" alt="" />
       </div>
     </div>
   </section>
   <footer>
   </footer>
-  <script>
-    fetch('navegacion.html')
-      .then(response => response.text())
-      .then(text => {
-        const header = document.querySelector('header');
-        if (header) {
-          header.innerHTML = text;
-        } else {
-          const body = document.querySelector('body');
-          body.insertAdjacentHTML('afterbegin', text);
-        }
-      })
-      .catch(error => console.error(error));
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(text => {
-        const footer = document.querySelector('footer');
-        if (footer) {
-          footer.innerHTML = text;
-        } else {
-          const body = document.querySelector('body');
-          body.insertAdjacentHTML('afterbegin', text);
-        }
-      })
-      .catch(error => console.error(error));
-  </script>
+  <script src="js/barras de navegacion.js"></script>
 </body>
 
 </html>
