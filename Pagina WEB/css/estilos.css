@@ -11,6 +11,7 @@ footer {
   justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
+  height: 10dvh;
 }
 .Logo {
   display: flex;
@@ -139,7 +140,8 @@ h3 {
   justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
-  height: 150px;
+  /* height: 150px; */
+  height: 30dvh;
   color: white;
 }
 .Redes .Paginas {
@@ -258,11 +260,13 @@ h3 {
   width: 100%;
 }
 .formulario {
+  display: block;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 5dvh auto 5dvh auto;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
 }
 .titulo h2 {
   text-align: center;
@@ -282,7 +286,7 @@ input[type="password"] {
   box-sizing: border-box;
   border: none;
   outline: none;
-  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   font-family: serif;
   font-size: 16px;
 }
@@ -308,6 +312,43 @@ input[type="password"] {
   font-family: serif;
 }
 .formulario .botones .boton-continuar {
+  background-color: #A0B499;
+  color: black;
+  border: none;
+  padding: 10px;
+  width: 25%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 12px;
+  font-family: serif;
+}
+/* sign up.html */
+.formulario-sesion {
+  display: block;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  margin: 12dvh auto 12dvh auto;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+.formulario-sesion .botones {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5%;
+}
+.formulario-sesion .botones .boton-volver {
+  background-color: #d9d9d9;
+  color: black;
+  border: none;
+  padding: 10px;
+  width: 25%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 12px;
+  font-family: serif;
+}
+.formulario-sesion   .botones .boton-continuar {
   background-color: #A0B499;
   color: black;
   border: none;
