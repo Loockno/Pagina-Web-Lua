@@ -49,3 +49,15 @@ function cambiarImagenNavegacion() {
         imgNosotros.src = "img/NOSOTROS2.svg";
     }
 }
+    function loadChatButton() {
+        fetch('chat.html') 
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('chat-contenedor').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error al cargar el botón de chat:', error);
+            });
+    }
+
+    window.addEventListener('load', loadChatButton);

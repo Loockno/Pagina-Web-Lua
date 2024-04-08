@@ -359,3 +359,23 @@ input[type="password"] {
   font-size: 12px;
   font-family: serif;
 }
+/* Chat.html */
+.chat-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+  border: none;
+  background: none;
+}
+
+.chat-button img {
+  width: 100px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.chat-button img:hover {
+  transform: scale(1.1);
+}
