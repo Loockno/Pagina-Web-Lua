@@ -11,7 +11,7 @@ footer {
   justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
-  height: 10dvh;
+  height: 8dvh;
 }
 .Logo {
   display: flex;
