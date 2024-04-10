@@ -11,7 +11,7 @@ footer {
   justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
-  height: 8dvh;
+  height: 12dvh;
 }
 .Logo {
   display: flex;
@@ -312,7 +312,7 @@ input[type="password"] {
   font-family: serif;
 }
 .formulario .botones .boton-continuar {
-  background-color: #A0B499;
+  background-color: #a0b499;
   color: black;
   border: none;
   padding: 10px;
@@ -348,8 +348,8 @@ input[type="password"] {
   font-size: 12px;
   font-family: serif;
 }
-.formulario-sesion   .botones .boton-continuar {
-  background-color: #A0B499;
+.formulario-sesion .botones .boton-continuar {
+  background-color: #a0b499;
   color: black;
   border: none;
   padding: 10px;
@@ -368,14 +368,78 @@ input[type="password"] {
   border: none;
   background: none;
 }
-
 .chat-button img {
-  width: 100px; /* Ajusta el tamaño según sea necesario */
+  width: 100px;
   height: auto;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-
 .chat-button img:hover {
-  transform: scale(1.1);
+  transform: scale(1.4);
+}
+/* carrito.html */
+.mzcl-cart-container {
+    background-color: #F0F0F0;
+    color: #505050;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mzcl-cart-header {
+    font-family: 'Playfair Display', serif;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.mzcl-cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #D3D3D3;
+    padding: 10px 0;
+}
+
+.mzcl-cart-item:last-child {
+    border-bottom: none;
+}
+
+.mzcl-cart-image {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.mzcl-cart-description {
+    flex-grow: 1;
+}
+
+.mzcl-cart-price {
+    font-weight: bold;
+}
+
+.mzcl-cart-action {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.mzcl-cart-summary {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.mzcl-checkout-btn {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #707070;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
 }
