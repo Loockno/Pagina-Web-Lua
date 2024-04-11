@@ -27,9 +27,10 @@
                     <input type="text" id="apellido_materno" name="apellido_materno" placeholder="Apellido Materno"
                         required>
 
-                    <input type="tel" id="telefono" name="telefono" placeholder="Telefono" required>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Telefono" autocomplete="off" required>
 
-                    <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" autocomplete="off"
+                        required>
 
                     <input type="password" id="confirmar_contrasena" placeholder="Confirmar contraseña"
                         name="confirmar_contrasena" required>
@@ -46,7 +47,7 @@
                 <div class="titulo">
                     <h1>INICIA SESIÓN</h1>
                 </div>
-                <form action="procesar_registro.php" method="POST">
+                <form action="procesar_login.php" method="POST">
                     <input type="email" id="correo" name="correo" placeholder="Correo" required>
 
                     <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
