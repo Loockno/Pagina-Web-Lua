@@ -56,6 +56,7 @@ $productos = $conn->query($sql);
       while($columna = mysqli_fetch_assoc($productos)){
       ?>
         <div class="carta">
+          <a href="mezcal_producto.php?id=<?php echo $columna["ID_mezcal"]; ?>">
           <img src="img/<?php echo $columna["Imagen_mezcal"];?>" alt="">
           <h3><?php echo $columna["Nombre_mezcal"];?></h3>
           <p>$<?php echo $columna["Precio"];?></p>
