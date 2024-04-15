@@ -84,11 +84,13 @@ footer {
 .productos-mezcales {
   background-color: #ffffff;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 0%;
   width: 100%;
+  margin-left:200px;
+  margin-right: 200px;
 }
 .productos-mezcales .productos {
   flex-direction: row;

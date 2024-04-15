@@ -1,3 +1,10 @@
+<?php
+  require_once ("conexion.php");
+  $sql = "SELECT * FROM Mezcales";	
+  $productos = $conn->query($sql);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,42 +33,26 @@
       <h2>EL MEZCAL</h2>
     </div>
     <div class="productos-mezcales">
-      <article class="productos">
+      
+            <?php
+          $contador = 0;
+          while ($columna = mysqli_fetch_assoc($productos)) {
+            if ($contador >= 6) {
+              break; // Salir del bucle si ya se han mostrado 6 registros
+            }
+        ?>
         <div class="carta">
-          <img src="img/botella_Jabali.png" alt="Image 10" />
-          <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
-          <p>Agotado</p>
+          <a href="mezcal_producto.php?id=<?php echo $columna["ID_mezcal"]; ?>">
+            <img src="img/<?php echo $columna["Imagen_mezcal"]; ?>" alt="">
+            <h3><?php echo $columna["Nombre_mezcal"]; ?></h3>
+            <p>$<?php echo $columna["Precio"]; ?></p>
         </div>
-        <div class="carta">
-          <img src="img/botella_Jabali.png" alt="Image 11" />
-          <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
-          <p>Agotado</p>
-        </div>
-        <div class="carta">
-          <img src="img/botella_Jabali.png" alt="Image 12" />
-          <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
-          <p>Agotado</p>
-        </div>
-      </article>
-      <div class="productos-mezcales">
-        <article class="productos">
-          <div class="carta">
-            <img src="img/botella_Jabali.png" alt="Image 10" />
-            <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
-            <p>Agotado</p>
-          </div>
-          <div class="carta">
-            <img src="img/botella_Jabali.png" alt="Image 11" />
-            <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
-            <p>Agotado</p>
-          </div>
-          <div class="carta">
-            <img src="img/botella_Jabali.png" alt="Image 12" />
-            <h3>Mezcal Blanco Joven, Etiqueta Verde.</h3>
-            <p>Agotado</p>
-          </div>
-        </article>
-        <div class="boton-mostrar-mas">
+        <?php
+            $contador++;
+          }
+        ?>
+
+    <div class="boton-mostrar-mas">
           <img src="img/botonMostrarMás.svg" alt="" />
         </div>
       </div>
