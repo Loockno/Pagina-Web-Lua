@@ -39,7 +39,7 @@ function cambiarImagenNavegacion() {
         imgInicio.src = "img/INICIO2.svg";
         imgProductos.src = "img/PRODUCTOS.svg";
         imgNosotros.src = "img/NOSOTROS.svg";
-    } else if (currentPage === "productos.html") {
+    } else if (currentPage === "productos.php") {
         imgInicio.src = "img/INICIO.svg";
         imgProductos.src = "img/PRODUCTOS2.svg";
         imgNosotros.src = "img/NOSOTROS.svg";
