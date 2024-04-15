@@ -4,26 +4,20 @@ $id = "";
 if (isset($_GET["id"])) {
     $id = $_GET["id"];
 }
-
 $sql_query = "SELECT * FROM Mezcales WHERE ID_mezcal = $id";
 $result = $conn->query($sql_query);
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
     <link rel="stylesheet" href="estilos.css" />
 </head>
-
 <body>
     <header>
     </header>
-
     <div class="contenedor-producto">
         <?php
         if ($result->num_rows > 0) {
@@ -36,22 +30,13 @@ $result = $conn->query($sql_query);
                     <h3><?php echo $row["Precio"]; ?></h3>
                     <p><?php echo $row["Descripcion"]; ?></p>
                 </div>
-
                 <?php
             }
         }
-
         ?>
-
         <div class="detalles">
-
-
         </div>
-
-
-
     </div>
-
     <div id="chat-contenedor"></div>
     <footer>
     </footer>
