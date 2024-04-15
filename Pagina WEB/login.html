@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div id="registroFormulario">
+            <section class="formulario">
+                <div class="titulo">
+                    <h1>REGÍSTRATE</h1>
+                </div>
+                <form action="procesar_registro.php" method="POST">
+                    <input type="email" id="correo" name="correo" placeholder="Correo" required>
+
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+
+                    <input type="text" id="apellido_paterno" name="apellido_paterno" placeholder="Apellido Paterno"
+                        required>
+
+                    <input type="text" id="apellido_materno" name="apellido_materno" placeholder="Apellido Materno"
+                        required>
+
+                    <input type="tel" id="telefono" name="telefono" placeholder="Telefono" autocomplete="off" required>
+
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" autocomplete="off"
+                        required>
+
+                    <input type="password" id="confirmar_contrasena" placeholder="Confirmar contraseña"
+                        name="confirmar_contrasena" required>
+                    <div class="botones">
+                        <input type="button" value="INICIA SESIÓN" class="boton-volver" onclick="mostrarSesion()">
+                        <input type="submit" value="CONTINUAR" class="boton-continuar">
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <div id="sesionFormulario" style="display: none;">
+            <section class="formulario-sesion">
+                <div class="titulo">
+                    <h1>INICIA SESIÓN</h1>
+                </div>
+                <form action="procesar_login.php" method="POST">
+                    <input type="email" id="correo" name="correo" placeholder="Correo" required>
+
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+                    <div class="botones">
+                        <input type="button" value="REGÍSTRATE" class="boton-volver" onclick="mostrarRegistro()">
+                        <input type="submit" value="CONTINUAR" class="boton-continuar">
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="js/barras de navegacion.js"></script>
+    <script>
+        function mostrarSesion() {
+            document.getElementById('registroFormulario').style.display = 'none';
+            document.getElementById('sesionFormulario').style.display = 'block';
+        }
+
+        function mostrarRegistro() {
+            document.getElementById('sesionFormulario').style.display = 'none';
+            document.getElementById('registroFormulario').style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

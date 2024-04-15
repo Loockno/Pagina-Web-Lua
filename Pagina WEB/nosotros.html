@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nosotros</title>
-  <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
   <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
 </head>
 
@@ -18,11 +18,11 @@
         <h1>MEZCALION</h1>
       </div>
       <div class="estrellas">
-        <img src="imagenes/star.png">
-        <img src="imagenes/star.png">
-        <img src="imagenes/star.png">
-        <img src="imagenes/star.png">
-        <img src="imagenes/star.png">
+        <img src="img/star.png">
+        <img src="img/star.png">
+        <img src="img/star.png">
+        <img src="img/star.png">
+        <img src="img/star.png">
       </div>
       <div class="informacion">
         <p>
@@ -37,14 +37,14 @@
           cada usuario. A través de una serie de preguntas simples, el chatbot recopila información sobre las
           preferencias de sabor y las restricciones de presupuesto del usuario.
         </p>
-        <img src="imagenes/chatbot.png">
+        <img src="img/chatbot.png">
       </div>
       <div class="estrellas">
-        <img src="imagenes/star.png">
-        <img src="imagenes/star.png">
-        <img src="imagenes/star.png">
-        <img src="imagenes/star.png">
-        <img src="imagenes/star.png">
+        <img src="img/star.png">
+        <img src="img/star.png">
+        <img src="img/star.png">
+        <img src="img/star.png">
+        <img src="img/star.png">
       </div>
       <div class="ubicacion">
         <div class="direccion">
@@ -64,36 +64,10 @@
       </div>
     </div>
   </section>
+  <div id="chat-contenedor"></div>
   <footer>
-    <div class="Redes">
-      <img src="imagenes/logoFooter.svg" alt="">
-      <div class="Contacto">
-        <p>CONTÁCTO</p>
-        <p>CEL - 4435954101</p>
-        <p>CORREO - contacto@mezcalion.com</p>
-      </div>
-      <div class="Paginas">
-        <p>PRODUCTOS</p>
-        <p>NOSOTROS</p>
-        <p>LOGIN</p>
-        <p>CARRITO</p>
-      </div>
-      <img src="imagenes/paypal-credit-card.svg" alt="">
   </footer>
-  <script>
-    fetch('navegacion.html')
-      .then(response => response.text())
-      .then(text => {
-        const header = document.querySelector('header');
-        if (header) {
-          header.innerHTML = text;
-        } else {
-          const body = document.querySelector('body');
-          body.insertAdjacentHTML('afterbegin', text);
-        }
-      })
-      .catch(error => console.error(error));
-  </script>
+  <script src="js/barras de navegacion.js"></script>
 </body>
 
 </html>

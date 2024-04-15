@@ -5,16 +5,21 @@ header,
 footer {
   background-color: #242222;
 }
-.Bnavegación {
+/* navegacion.html */
+.menu {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
+  height: 12dvh;
 }
 .Logo {
   display: flex;
   margin-left: 1%;
   align-items: center;
+}
+.Logo img {
+  margin: 0 2dvh;
 }
 .Apartados {
   display: flex;
@@ -27,6 +32,7 @@ footer {
   justify-content: space-evenly;
   margin-right: 1%;
 }
+/* index.html */
 .Eslogan {
   height: 500px;
   width: 100%;
@@ -35,6 +41,7 @@ footer {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.5);
 }
 .Eslogan h1 {
   position: absolute;
@@ -74,7 +81,7 @@ footer {
   margin: 0%;
   padding: 0%;
 }
-.Pmezcales {
+.productos-mezcales {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -83,25 +90,25 @@ footer {
   margin: 0%;
   width: 100%;
 }
-.Pmezcales .productos {
+.productos-mezcales .productos {
   flex-direction: row;
   display: flex;
   margin-bottom: 1%;
 }
-.Pmezcales .productos .carta {
+.productos-mezcales .productos .carta {
   text-align: center;
 }
-.Pmezcales .productos .carta p,
+.productos-mezcales .productos .carta p,
 h3 {
   font-family: serif;
   font-size: 1.5em;
   font-weight: 500;
 }
-.Pmezcales .Bmostrar {
+.productos-mezcales .boton-mostrar-mas {
   margin: 0%;
   padding: 0%;
 }
-.Pcocteles {
+.productos-cocteles {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -111,24 +118,25 @@ h3 {
   padding: 0%;
   width: 100%;
 }
-.Pcocteles .productos {
+.productos-cocteles .productos {
   flex-direction: row;
   display: flex;
   margin-bottom: 1%;
 }
-.Pcocteles .productos .carta {
+.productos-cocteles .productos .carta {
   text-align: center;
 }
-.Pcocteles .productos .carta p,
+.productos-cocteles .productos .carta p,
 h3 {
   font-family: serif;
   font-size: 1.5em;
   font-weight: 500;
 }
-.Pcocteles .Bmostrar {
+.productos-cocteles .boton-mostrar-mas {
   margin: 0%;
   padding: 0%;
 }
+/* footer.html */
 .Redes {
   margin: 0%;
   margin-top: 4%;
@@ -136,7 +144,8 @@ h3 {
   justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
-  height: 150px;
+  /* height: 150px; */
+  height: 30dvh;
   color: white;
 }
 .Redes .Paginas {
@@ -147,6 +156,7 @@ h3 {
   font-family: serif;
   line-height: 0.1;
 }
+/* nosotros.html */
 .nosotros {
   display: flex;
   flex-direction: column;
@@ -217,30 +227,290 @@ h3 {
   margin-right: 60px;
   margin-top: 20px;
 }
-.Pmezcales2 {
+/* productos.html */
+.contenedor-productos {
   background-color: #ffffff;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 30px;
+  
+}
+.contenedor-productos .carta {
+  text-align: center;
+  max-width: 250px;
+  height: 430px;
+  flex: 0 0 310px;
+  margin:80px;
+  margin-bottom:100px;
+  padding-top:20px;
+  padding-bottom: 50px;
+
+}
+
+.carta:hover{
+  box-shadow: 0 0 16px rgba(33,33,33,.2); 
+  transform:scale(1.01);
+  border-radius: 20px;
+}
+.contenedor-productos .carta p, h3 {
+  font-family: serif;
+}
+
+.filtro{
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: serif;
+  margin-top:20px;
+  margin-left:140px;
+}
+
+.filtro .buscador{
+  background-color: transparent;
+  width: 40%;
+  border:none;
+  outline:none;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 2px;
+  font-family: serif;
+  font-size: 20px;
+}
+
+
+
+.filtro .buscar{
+  padding: 1em 4em;
+  margin-left: 2em;
+  margin-bottom:5em;
+  background-color: #585858;
+  border:none;
+  color:#ffffff;
+  border-radius:5px;
+  font-family:serif;
+  font-size:10px;
+  box-shadow: rgb(255, 255, 255) 0px 3px 6px, rgb(255, 255, 255) 0px 3px 6px;
+}
+
+.buscar:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 25px;
+}
+
+.boton-producto{
+  border: 2px solid #585858;
+  padding: 0.2em 1.1em;
+  background-color: transparent;
+  color: #585858;
+  cursor:pointer;
+  margin-bottom:20px;
+  margin-left:7px;
+
+}
+
+.boton-producto:hover{
+  background-color:#585858;
+  color:#f0f0f0;
+}
+
+
+
+/* login.html */
+.titulo {
+  display: flex;
+  justify-content: center;
   margin: 0%;
   width: 100%;
 }
-.Pmezcales2 .productos {
-  margin-top: 5%;
-  flex-direction: row;
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
+.formulario {
+  display: block;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  margin: 5dvh auto 5dvh auto;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
 }
-.Pmezcales2 .productos .carta {
+.titulo h2 {
   text-align: center;
-}
-.Pmezcales2 .productos .carta p,
-h3 {
+  margin-bottom: 20px;
+  font-size: 36px;
   font-family: serif;
-  font-size: 1em;
-  font-weight: 500;
 }
-.Pmezcales2 .Bmostrar {
-  margin-bottom: 2%;
+.formulario input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  font-family: serif;
+  font-size: 16px;
+}
+.formulario input[type="submit"]:hover {
+  filter: brightness(90%);
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+.formulario .botones {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5%;
+}
+.formulario .botones .boton-volver {
+  background-color: #d9d9d9;
+  color: black;
+  border: none;
+  padding: 10px;
+  width: 25%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 12px;
+  font-family: serif;
+}
+.formulario .botones .boton-continuar {
+  background-color: #a0b499;
+  color: black;
+  border: none;
+  padding: 10px;
+  width: 25%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 12px;
+  font-family: serif;
+}
+/* sign up.html */
+.formulario-sesion {
+  display: block;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  margin: 12dvh auto 12dvh auto;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+.formulario-sesion .botones {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5%;
+}
+.formulario-sesion .botones .boton-volver {
+  background-color: #d9d9d9;
+  color: black;
+  border: none;
+  padding: 10px;
+  width: 25%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 12px;
+  font-family: serif;
+}
+.formulario-sesion .botones .boton-continuar {
+  background-color: #a0b499;
+  color: black;
+  border: none;
+  padding: 10px;
+  width: 25%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 12px;
+  font-family: serif;
+}
+/* Chat.html */
+.chat-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+  border: none;
+  background: none;
+}
+.chat-button img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.chat-button img:hover {
+  transform: scale(1.4);
+}
+/* carrito.html */
+.mzcl-cart-container {
+  background-color: #f0f0f0;
+  color: #505050;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mzcl-cart-header {
+  font-family: "Playfair Display", serif;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.mzcl-cart-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 10px 0;
+}
+
+.mzcl-cart-item:last-child {
+  border-bottom: none;
+}
+
+.mzcl-cart-image {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.mzcl-cart-description {
+  flex-grow: 1;
+}
+
+.mzcl-cart-price {
+  font-weight: bold;
+}
+
+.mzcl-cart-action {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.mzcl-cart-summary {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.mzcl-checkout-btn {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #707070;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+a{
+  all:unset;
+  cursor: pointer;
 }
