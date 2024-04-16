@@ -87,18 +87,22 @@ footer {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   width: 100%;
-  margin-left:200px;
-  margin-right: 200px;
+  margin-left: 0;
+  margin-right: 0; /* Agregar esta línea para eliminar el margen derecho */
+  margin-top: 30px;
 }
+
 .productos-mezcales .productos {
   flex-direction: row;
   display: flex;
   margin-bottom: 1%;
 }
-.productos-mezcales .productos .carta {
+.productos-mezcales .carta {
   text-align: center;
+  margin-left:150px;
+  margin-right: 100px;
+  margin-top:50px;
 }
 .productos-mezcales .productos .carta p,
 h3 {
@@ -106,9 +110,11 @@ h3 {
   font-size: 1.5em;
   font-weight: 500;
 }
-.productos-mezcales .boton-mostrar-mas {
-  margin: 0%;
-  padding: 0%;
+.productos-cocteles .boton-mostrar-mas {
+  display: flex; /* Usamos flexbox para centrar vertical y horizontalmente */
+  align-items: center; /* Centramos verticalmente */
+  justify-content: center; /* Centramos horizontalmente */
+  margin: 30px 0; /* Ajusta según sea necesario */
 }
 .productos-cocteles {
   background-color: #ffffff;

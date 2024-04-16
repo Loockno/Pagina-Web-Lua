@@ -38,7 +38,7 @@
           $contador = 0;
           while ($columna = mysqli_fetch_assoc($productos)) {
             if ($contador >= 6) {
-              break; // Salir del bucle si ya se han mostrado 6 registros
+              break; 
             }
         ?>
         <div class="carta">
@@ -51,11 +51,10 @@
             $contador++;
           }
         ?>
-
-    <div class="boton-mostrar-mas">
-          <img src="img/botonMostrarMás.svg" alt="" />
-        </div>
       </div>
+      <div class="boton-mostrar-mas">
+          <a href="productos.php"><img src="img/botonMostrarMás.svg" alt="" /></a>
+        </div>
   </section>
   <section>
     <div class="Titulo">
