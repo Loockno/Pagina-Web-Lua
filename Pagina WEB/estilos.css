@@ -323,7 +323,68 @@ h3 {
   color:#f0f0f0;
 }
 
+/* productos individuales */
+.contenedor-producto{  
+  display: flex;
+  justify-content: center;
+  margin:100px;
+  
+}
 
+.contenedor-producto .informacion_producto{
+  width: 50%;
+}
+
+.contenedor-producto .imagen{
+  width:50%;
+  margin-left: 15%;
+}
+
+.contenedor-producto .botones-carrito{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top:20%;
+  height: 60px;
+}
+
+.contenedor-producto .botones-carrito .input-cantidad{
+  width: 30px;
+  height: 10px;
+}
+
+.contenedor-producto .boton-agregar {
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 36%;
+}
+
+.contenedor-producto .boton-agregar:hover,  
+.boton-agregar:focus {
+  opacity: .75;
+}
 
 /* login.html */
 .titulo {

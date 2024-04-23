@@ -23,12 +23,21 @@ $result = $conn->query($sql_query);
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 ?>
+                <div class="imagen">
                 <img src="img/<?php echo $row["Imagen_mezcal"]; ?>" alt="">
+                </div>
                 <div class="informacion_producto">
-                    <h1><?php echo $row["Nombre_mezcal"]; ?></h1>
-                    <h2><?php echo $row["Tipo"]; ?></h2>
-                    <h3><?php echo $row["Precio"]; ?></h3>
+                    <h1><?php echo $row["Nombre_mezcal"]; ?> - <?php echo $row["Volumen"]; ?> ml</h1>
+                    <h3>$<?php echo $row["Precio"]; ?></h3>
                     <p><?php echo $row["Descripcion"]; ?></p>
+
+                    <div class="botones-carrito">
+                    <input class="quantity" class="input-cantidad" min="0" value="1" type="number">
+                    <button class="boton-agregar" data-id="<?php echo $row["ID_mezcal"]; ?>">AÑADIR AL CARRITO</button>
+                    
+                    
+                    </div>
+                    <p><br>Categoría: <?php echo $row["Tipo"]; ?></p>
                 </div>
                 <?php
             }
