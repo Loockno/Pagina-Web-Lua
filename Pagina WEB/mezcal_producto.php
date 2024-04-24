@@ -32,7 +32,7 @@ $result = $conn->query($sql_query);
                     <p><?php echo $row["Descripcion"]; ?></p>
 
                     <div class="botones-carrito">
-                    <input class="quantity" class="input-cantidad" min="0" value="1" type="number">
+                    <input  class="input-cantidad" min="1" step="1" value="1" type="number">
                     <button class="boton-agregar" data-id="<?php echo $row["ID_mezcal"]; ?>">AÑADIR AL CARRITO</button>
                     
                     

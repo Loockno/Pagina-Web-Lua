@@ -110,7 +110,7 @@ h3 {
   font-size: 1.5em;
   font-weight: 500;
 }
-.productos-cocteles .boton-mostrar-mas {
+.boton-mostrar-mas {
   display: flex; /* Usamos flexbox para centrar vertical y horizontalmente */
   align-items: center; /* Centramos verticalmente */
   justify-content: center; /* Centramos horizontalmente */
@@ -337,23 +337,32 @@ h3 {
 
 .contenedor-producto .imagen{
   width:50%;
-  margin-left: 15%;
+  margin-left: 25%;
 }
 
 .contenedor-producto .botones-carrito{
   display:flex;
   flex-direction: row;
-  justify-content: space-between;
   margin-top:20%;
   height: 60px;
 }
 
 .contenedor-producto .botones-carrito .input-cantidad{
-  width: 30px;
-  height: 10px;
+  width: 45px;
+  height: 44px;
+  line-height: 1.65;
+  float: left;
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+  border: 1px solid #a3a3a3;
+  margin-right: 50px;
+  margin-top:7px;
 }
 
-.input[type="number"]
+
+
 
 .contenedor-producto .boton-agregar {
   background-color: #222;
@@ -364,7 +373,7 @@ h3 {
   cursor: pointer;
   display: inline-block;
   font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 700;
   line-height: 1.5;
   margin: 0;
