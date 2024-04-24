@@ -35,7 +35,7 @@ function cambiarImagenNavegacion() {
     var imgNosotros = document.getElementById("img-nosotros");
 
     // Cambiar las imágenes según la página actual
-    if (currentPage === "index.html") {
+    if (currentPage === "index.php") {
         imgInicio.src = "img/INICIO2.svg";
         imgProductos.src = "img/PRODUCTOS.svg";
         imgNosotros.src = "img/NOSOTROS.svg";
