@@ -1,7 +1,10 @@
 <?php
   require_once ("conexion.php");
-  $sql = "SELECT * FROM Mezcales";	
-  $productos = $conn->query($sql);
+  $sql_mezcal = "SELECT * FROM Mezcales";	
+  $productos = $conn->query($sql_mezcal);
+
+  $sql_coctel = "SELECT * FROM recetas";
+  $recetas = $conn->query($sql_coctel);
 
 ?>
 
@@ -33,7 +36,7 @@
       <h2>EL MEZCAL</h2>
     </div>
     <div class="productos-mezcales">
-      
+      <div class="margen">
             <?php
           $contador = 0;
           while ($columna = mysqli_fetch_assoc($productos)) {
@@ -55,31 +58,36 @@
       <div class="boton-mostrar-mas">
           <a href="productos.php"><img src="img/botonMostrarMás.svg" alt="" /></a>
         </div>
+      </div>
   </section>
   <section>
+  <div class="productos-cocteles">
     <div class="Titulo">
       <h2>CÓCTELES</h2>
     </div>
-    <div class="productos-cocteles">
-      <article class="productos">
-        <div class="carta">
-          <img src="img/coctal 1.png" alt="Image 10" />
-          <h3>Fresa y humo</h3>
-        </div>
-        <div class="carta">
-          <img src="img/coctal 1.png" alt="Image 11" />
-          <h3>Fresa y humo</h3>
-        </div>
-        <div class="carta">
-          <img src="img/coctal 1.png" alt="Image 12" />
-          <h3>Fresa y humo</h3>
-        </div>
-      </article>
+    <div class="margen">
+      <?php
+        $contador_coctel= 0;
+        while ($columna_coctel = mysqli_fetch_assoc($recetas)) {
+          if ($contador_coctel>= 6) {
+            break;
+          }
+      ?>
+      <div class="carta">
+        <a href="coctel_receta.php?id=<?php echo $columna_coctel["ID_receta"]; ?>"> 
+          <img src="img/<?php echo $columna_coctel["Imagen_coctel"]; ?>" alt="">
+          <h3><?php echo $columna_coctel["nombre"]; ?></h3>
+      </div>
+      <?php
+          $contador_coctel++;
+        }
+      ?>
+      </div>
       <div class="boton-mostrar-mas">
-        <img src="img/botonMostrarMás.svg" alt="" />
+        <a href="cocteles.php"><img src="img/botonMostrarMás.svg" alt="" /></a>
       </div>
     </div>
-  </section>
+</section>
   <div id="chat-contenedor"></div>
   <footer>
   </footer>

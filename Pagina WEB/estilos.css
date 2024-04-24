@@ -83,26 +83,23 @@ footer {
 }
 .productos-mezcales {
   background-color: #ffffff;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
   width: 100%;
   margin-left: 0;
-  margin-right: 0; /* Agregar esta línea para eliminar el margen derecho */
+  margin-right: 0; 
   margin-top: 30px;
 }
 
-.productos-mezcales .productos {
-  flex-direction: row;
+.productos-mezcales .margen {
   display: flex;
-  margin-bottom: 1%;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 .productos-mezcales .carta {
-  text-align: center;
-  margin-left:150px;
-  margin-right: 100px;
-  margin-top:50px;
+  margin-left:100px;
+  margin-right: 80px;
+  margin-bottom:40px;
 }
 .productos-mezcales .productos .carta p,
 h3 {
@@ -111,35 +108,35 @@ h3 {
   font-weight: 500;
 }
 .boton-mostrar-mas {
-  display: flex; /* Usamos flexbox para centrar vertical y horizontalmente */
-  align-items: center; /* Centramos verticalmente */
-  justify-content: center; /* Centramos horizontalmente */
-  margin: 30px 0; /* Ajusta según sea necesario */
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  margin: 30px 0; 
 }
 .productos-cocteles {
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0%;
-  padding: 0%;
   width: 100%;
+  margin-left: 0;
+  margin-right: 0; 
+  margin-top: 30px;
 }
-.productos-cocteles .productos {
-  flex-direction: row;
+
+.productos-cocteles .margen {
   display: flex;
-  margin-bottom: 1%;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 80px;
+  margin-right: 80px;
 }
-.productos-cocteles .productos .carta {
+
+.productos-cocteles .carta{
+  margin-left:80px;
+  margin-right:50px;
+  margin-bottom: 40px;
   text-align: center;
+
 }
-.productos-cocteles .productos .carta p,
-h3 {
-  font-family: serif;
-  font-size: 1.5em;
-  font-weight: 500;
-}
+
 .productos-cocteles .boton-mostrar-mas {
   margin: 0%;
   padding: 0%;
