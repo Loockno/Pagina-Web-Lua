@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    <?php
+    session_start(); // Asegúrate de llamar a session_start() al principio
+
+    // Decide qué enlace mostrar basado en si el usuario está logueado
+    $enlaceUsuario = isset($_SESSION['usuario']) ? 'perfil.php' : 'login.html';
+    ?>
     <nav class="menu">
         <div class="Logo">
             <a href="index.php"><img src="img/MEZCALIÓN.svg" alt="Image 1" /></a>
@@ -22,7 +28,8 @@
         <div class="Iconos">
             <img src="img/lupa 1.svg" alt="Image 6" />
             <a href="carrito.html"><img src="img/bolsa-de-la-compra 1.svg" alt="Image 7" /></a>
-            <a href="login.html"><img src="img/usuario 1.svg" alt="Image 8" /></a>
+            <a href="<?= $enlaceUsuario ?>"><img src="img/usuario 1.svg" alt="Usuario" /></a>
+        </div>
         </div>
     </nav>
 </body>

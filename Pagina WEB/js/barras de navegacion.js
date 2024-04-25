@@ -1,4 +1,4 @@
-fetch("navegacion.html")
+fetch("navegacion.php")
     .then((response) => response.text())
     .then((text) => {
         const header = document.querySelector("header");
