@@ -401,7 +401,7 @@ h3 {
   margin: 5dvh auto 5dvh auto;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
 }
-.titulo h2 {
+.titulo h1 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 36px;
@@ -464,6 +464,17 @@ input[type="password"] {
   cursor: pointer;
   transition: background-color 0.3s;
   font-size: 12px;
+  font-family: serif;
+}
+.formulario .botones .boton-editar {
+  background-color: #a0b499;
+  color: black;
+  border: none;
+  padding: 10px;
+  width: 40%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 15px;
   font-family: serif;
 }
 /* sign up.html */
