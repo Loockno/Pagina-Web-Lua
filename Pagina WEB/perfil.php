@@ -17,8 +17,8 @@
     }
     ?>
     <header></header>
-    <section class="formulario">
-        <h1 class="titulo">Perfil del Usuario</h1>
+    <section class="formulario-perfil">
+        <h1 class="titulo-perfil">Perfil del Usuario</h1>
         <p><strong>Nombre:</strong> <?php echo htmlspecialchars($_SESSION['Nombre']); ?></p>
         <p><strong>Apellido Paterno:</strong> <?php echo htmlspecialchars($_SESSION['Apellido_paterno']); ?></p>
         <p><strong>Apellido Materno:</strong> <?php echo htmlspecialchars($_SESSION['Apellido_materno']); ?></p>
