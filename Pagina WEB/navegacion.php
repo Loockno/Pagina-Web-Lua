@@ -23,10 +23,10 @@
         <div class="Apartados">
             <a href="index.php" id="link-inicio"><img src="img/INICIO.svg" alt="Image 3" id="img-inicio"/></a>
             <a href="productos.php" id="link-productos"><img src="img/PRODUCTOS.svg" alt="Image 4" id="img-productos"/></a>
+            <a href="recetas.php" id="link-recetas"><img src="img/recetas.svg" alt="Image 6" id="img-recetas"></a>
             <a href="nosotros.html" id="link-nosotros"><img src="img/NOSOTROS.svg" alt="Image 5" id="img-nosotros"/></a>
         </div>
         <div class="Iconos">
-            <img src="img/lupa 1.svg" alt="Image 6" />
             <a href="carrito.html"><img src="img/bolsa-de-la-compra 1.svg" alt="Image 7" /></a>
             <a href="<?= $enlaceUsuario ?>"><img src="img/usuario 1.svg" alt="Usuario" /></a>
         </div>

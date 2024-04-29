@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['usuario'])) {
+    header("Location: login.html");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,14 +15,6 @@
 </head>
 
 <body>
-    <?php
-    session_start();
-
-    if (!isset($_SESSION['usuario'])) {
-        header("Location: login.html");
-        exit();
-    }
-    ?>
     <header></header>
     <section class="formulario">
         <div class="titulo">

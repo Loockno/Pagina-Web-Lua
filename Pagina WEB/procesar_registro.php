@@ -36,11 +36,23 @@ $stmt = $conn->prepare("INSERT INTO usuarios (Nombre, Apellido_paterno, Apellido
 $stmt->bind_param("ssssss", $nombre, $apellido_paterno, $apellido_materno, $telefono, $correo_electronico, $contrasena_hash);
 
 if ($stmt->execute()) {
-    echo "Usuario registrado exitosamente.";
-    header("Refresh: 3; url=index.html");
+    // Obtener el ID del usuario recién creado
+    $id_usuario = $conn->insert_id;
+
+    // Insertar el carrito para el nuevo usuario
+    $stmt_carrito = $conn->prepare("INSERT INTO carrito_de_compras (ID_usuario) VALUES (?)");
+    $stmt_carrito->bind_param("i", $id_usuario);
+    if ($stmt_carrito->execute()) {
+        echo "Usuario y carrito registrados exitosamente.";
+    } else {
+        echo "Usuario registrado, pero hubo un error al crear el carrito: " . $stmt_carrito->error;
+    }
+
+    $stmt_carrito->close();
+    header("Refresh: 3; url=index.php");
 
 } else {
-    echo "Error: " . $stmt->error;
+    echo "Error al registrar usuario: " . $stmt->error;
 }
 
 $stmt->close();
