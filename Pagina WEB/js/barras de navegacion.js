@@ -33,20 +33,30 @@ function cambiarImagenNavegacion() {
     var imgInicio = document.getElementById("img-inicio");
     var imgProductos = document.getElementById("img-productos");
     var imgNosotros = document.getElementById("img-nosotros");
+    var imgRecetas = document.getElementById("img-recetas");
 
     // Cambiar las imágenes según la página actual
     if (currentPage === "index.php") {
         imgInicio.src = "img/INICIO2.svg";
         imgProductos.src = "img/PRODUCTOS.svg";
         imgNosotros.src = "img/NOSOTROS.svg";
+        imgRecetas.src = "img/RECETAS.svg";
+
     } else if (currentPage === "productos.php") {
         imgInicio.src = "img/INICIO.svg";
         imgProductos.src = "img/PRODUCTOS2.svg";
         imgNosotros.src = "img/NOSOTROS.svg";
+        imgRecetas.src = "img/RECETAS.svg";
     } else if (currentPage === "nosotros.html") {
         imgInicio.src = "img/INICIO.svg";
         imgProductos.src = "img/PRODUCTOS.svg";
         imgNosotros.src = "img/NOSOTROS2.svg";
+        imgRecetas.src = "img/RECETAS.svg";
+    } else if (currentPage === "recetas.php") {
+        imgInicio.src = "img/INICIO.svg";
+        imgProductos.src = "img/PRODUCTOS.svg";
+        imgNosotros.src = "img/NOSOTROS.svg";
+        imgRecetas.src = "img/RECETAS2.svg";
     }
 }
     function loadChatButton() {
