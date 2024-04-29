@@ -18,13 +18,12 @@
     ?>
     <header></header>
     <section class="formulario-perfil">
-        <p class="titulo-perfil">Tu Perfil</p>
-        <p><?php echo htmlspecialchars($_SESSION['Nombre']); ?>
-        <?php echo htmlspecialchars($_SESSION['Apellido_paterno']); ?>
-        <?php echo htmlspecialchars($_SESSION['Apellido_materno']); ?></p>
-        
-        <p><?php echo htmlspecialchars($_SESSION['Celular']); ?></p>
-        <p><?php echo htmlspecialchars($_SESSION['Correo_electronico']); ?></p>
+        <h1 class="titulo-perfil">Perfil del Usuario</h1>
+        <p><strong>Nombre:</strong> <?php echo htmlspecialchars($_SESSION['Nombre']); ?></p>
+        <p><strong>Apellido Paterno:</strong> <?php echo htmlspecialchars($_SESSION['Apellido_paterno']); ?></p>
+        <p><strong>Apellido Materno:</strong> <?php echo htmlspecialchars($_SESSION['Apellido_materno']); ?></p>
+        <p><strong>Celular:</strong> <?php echo htmlspecialchars($_SESSION['Celular']); ?></p>
+        <p><strong>Correo Electrónico:</strong> <?php echo htmlspecialchars($_SESSION['Correo_electronico']); ?></p>
         <div class="botones">
             <input type="button" value="CERRAR SESION" class="boton-cerrar" onclick="window.location='logout.php';">
             <input type="button" value="EDITAR PERFIL" class="boton-editar" onclick="window.location='editar.php';">
