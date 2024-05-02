@@ -553,7 +553,7 @@ input[type="password"] {
 .chat-button img:hover {
   transform: scale(1.4);
 }
-/* carrito.html */
+/* carrito.php */
 .mzcl-cart-container {
   background-color: #f0f0f0;
   color: #505050;
@@ -619,6 +619,42 @@ input[type="password"] {
   cursor: pointer;
   font-size: 16px;
 }
+.mzcl-cart-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.mzcl-cart-actions form {
+  display: flex;
+  flex-direction: row; /* Cambia a row para alinear elementos horizontalmente */
+  align-items: center; /* Alinea verticalmente los elementos del formulario en el centro */
+  margin-bottom: 10px; /* Espacio entre formularios */
+}
+
+.mzcl-cart-quantity-input {
+  width: 30px; /* Ajusta el ancho según tus necesidades */
+  padding: 5px;
+  font-size: 14px;
+  margin-right: 10px; /* Espacio entre el input y el botón Actualizar */
+  text-align: center;
+}
+
+.mzcl-cart-action, .mzcl-cart-action2 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.mzcl-cart-action2 {
+  margin-top: 0; /* Elimina el margen superior añadido previamente */
+  width: 100%; /* Ajusta el ancho al 100% */
+}
+
 
 a {
   all: unset;
