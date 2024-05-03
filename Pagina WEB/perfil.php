@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="prueba.css">
+    <title>Perfil</title>
 </head>
 
 <body>
@@ -27,6 +29,17 @@
         <div class="botones">
             <input type="button" value="CERRAR SESION" class="boton-cerrar" onclick="window.location='logout.php';">
             <input type="button" value="EDITAR PERFIL" class="boton-editar" onclick="window.location='editar.php';">
+        </div>
+    </section>
+    <section class="formulario-direccion">
+        <h1 class="titulo-direccion">Direcion</h1>
+        <div class="botones-direccion">
+            <input type="button" value="AGREGAR" class="boton-agregar-direccion"
+                onclick="window.location='agregar-direcion.php';">
+            <input type="button" value="ELIMINAR" class="boton-eliminar-direccion"
+                onclick="window.location='eliminar-direcion.php';">
+            <input type="button" value="EDITAR" class="boton-editar-direccion"
+                onclick="window.location='editar-direcion.php';">
         </div>
     </section>
     <footer></footer>
