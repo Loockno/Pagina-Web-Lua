@@ -14,7 +14,7 @@ $resultado = $stmt->get_result();
 
 if ($resultado->num_rows > 0) {
     $usuario = $resultado->fetch_assoc();
-    if (password_verify($contrasena, $usuario['Contraseña'])) { 
+    if (password_verify($contrasena, $usuario['Contraseña'])) {
         // Inicia una nueva sesión
         session_start();
         // Establece las variables de sesión con la información del usuario
@@ -31,7 +31,13 @@ if ($resultado->num_rows > 0) {
         header("Location: index.php");
         exit();
     } else {
-        die('La contraseña es incorrecta.');
+        echo '<script type="text/javascript">';
+        echo 'alert("Contraseña o Usuario incorrecto.");';
+        echo 'setTimeout(function(){';
+        echo '    window.location.href = "login.html";';
+        echo '}, 100);';  // Redirige después de 3000 milisegundos (3 segundos)
+        echo '</script>';
+        exit();
     }
 } else {
     die('No existe ningún usuario con ese correo electrónico.');
