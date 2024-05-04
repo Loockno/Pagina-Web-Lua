@@ -33,20 +33,29 @@
         </section>
         <section class="formulario-direccion">
             <h1 class="titulo-direccion">Dirección</h1>
-            <p><strong>Calle y Número:</strong> <?php echo htmlspecialchars($_SESSION['Calle_numero']); ?></p>
-            <p><strong>Ciudad:</strong> <?php echo htmlspecialchars($_SESSION['Ciudad']); ?></p>
-            <p><strong>Estado:</strong> <?php echo htmlspecialchars($_SESSION['Estado']); ?></p>
-            <p><strong>Código Postal:</strong> <?php echo htmlspecialchars($_SESSION['Codigo_postal']); ?></p>
-            <p><strong>País:</strong> <?php echo htmlspecialchars($_SESSION['Pais']); ?></p>
-            <div class="botones-direccion">
+            <?php if (isset($_SESSION['Calle_numero']) && !empty($_SESSION['Calle_numero'])): ?>
+                <p><strong>Calle y Número:</strong> <?php echo htmlspecialchars($_SESSION['Calle_numero']); ?></p>
+                <p><strong>Ciudad:</strong> <?php echo htmlspecialchars($_SESSION['Ciudad']); ?></p>
+                <p><strong>Estado:</strong> <?php echo htmlspecialchars($_SESSION['Estado']); ?></p>
+                <p><strong>Código Postal:</strong> <?php echo htmlspecialchars($_SESSION['Codigo_postal']); ?></p>
+                <p><strong>País:</strong> <?php echo htmlspecialchars($_SESSION['Pais']); ?></p>
+                <div class="botones-direccion">
                 <input type="button" value="AGREGAR" class="boton-agregar-direccion"
-                    onclick="window.location='agregar-direccion.php';">
-                <input type="button" value="ELIMINAR" class="boton-eliminar-direccion"
-                    onclick="window.location='eliminar-direccion.php';">
-                <input type="button" value="EDITAR" class="boton-editar-direccion"
-                    onclick="window.location='editar-direccion.php';">
-            </div>
+                        onclick="window.location='agregar-direccion.html';">
+                    <input type="button" value="ELIMINAR" class="boton-eliminar-direccion"
+                        onclick="window.location='eliminar-direccion.php';">
+                    <input type="button" value="EDITAR" class="boton-editar-direccion"
+                        onclick="window.location='editar-direccion.php';">
+                </div>
+            <?php else: ?>
+                <p>No hay ninguna dirección agregada.</p>
+                <div class="botones-direccion">
+                    <input type="button" value="AGREGAR" class="boton-agregar-direccion"
+                        onclick="window.location='agregar-direccion.html';">
+                </div>
+            <?php endif; ?>
         </section>
+
 
         <section class="formulario-pago">
             <h1 class="titulo-pago">Pago</h1>
