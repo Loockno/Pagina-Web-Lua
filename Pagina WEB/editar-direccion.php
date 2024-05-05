@@ -11,14 +11,14 @@ if (!isset($_SESSION['usuario'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Perfin</title>
+    <title>Editar Direccion</title>
 </head>
 
 <body>
     <header></header>
     <section class="formulario">
         <div class="titulo">
-            <h1>EDITA TU PERFIL</h1>
+            <h1>EDITA TU DIRECCION</h1>
         </div>
         <form method="POST" action="procesar_edicion_direccion.php">
         <input type="text" id="calle_numero" name="calle_numero" placeholder="Calle y Número"

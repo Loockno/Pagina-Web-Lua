@@ -94,6 +94,7 @@ $totalArticulos = 0;
             <button class="mzcl-checkout-btn">Proceder al Pago</button>
         </div>
     </div>
+    <div id="chat-contenedor"></div>
     <footer></footer>
     <script src="js/barras de navegacion.js"></script>
 </body>

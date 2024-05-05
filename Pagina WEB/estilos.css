@@ -718,7 +718,7 @@ a {
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
 }
 .formulario-direccion .botones-direccion .boton-eliminar-direccion {
-  background-color: #b8c1b2;
+  background-color: #d9d9d9;
   color: black;
   border: none;
   padding: 10px;
@@ -776,7 +776,7 @@ a {
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
 }
 .formulario-pago .botones-pago .boton-eliminar-pago {
-  background-color: #b8c1b2;
+  background-color: #d9d9d9;
   color: black;
   border: none;
   padding: 10px;

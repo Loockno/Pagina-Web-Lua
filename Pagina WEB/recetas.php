@@ -51,6 +51,7 @@ $recetas = $conn->query($sql);
             ?>
         </div>
     </main>
+    <div id="chat-contenedor"></div>
     <footer></footer>
     <script src="js/barras de navegacion.js"></script>
 </body>
