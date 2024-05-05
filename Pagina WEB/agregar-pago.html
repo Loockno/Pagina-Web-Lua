@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Agregar Método de Pago</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section class="formulario">
+            <div class="titulo">
+                <h1>REGISTRAR MÉTODO DE PAGO</h1>
+            </div>
+            <form action="procesar-pago.php" method="post">
+                <input type="text" name="tipo" placeholder="Tipo de Tarjeta (Visa, MasterCard, etc.)" required>
+                <input type="text" name="numero_tarjeta" placeholder="Número de Tarjeta" required>
+                <input type="text" name="nombre_tarjeta" placeholder="Nombre en la Tarjeta" required>
+                <input type="text" name="fecha_expiracion" placeholder="Fecha de Expiración (MM/AA)" required>
+                <input type="text" name="cvv" placeholder="CVV" required>
+                <div class="botones">
+                    <input type="button" value="VOLVER" class="boton-volver" onclick="window.location='perfil.php';">
+                    <input type="submit" value="AGREGAR" class="boton-continuar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="js/barras de navegacion.js"></script>
+</body>
+
+</html>

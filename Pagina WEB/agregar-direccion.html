@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section class="formulario">
+            <div class="titulo">
+                <h1>REGÍSTAR DIRECCION</h1>
+            </div>
+            <form action="procesar-direccion.php" method="post">
+                <input type="text" name="calle_numero" placeholder="Calle y Número" required>
+                <input type="text" name="ciudad" placeholder="Ciudad" required>
+                <input type="text" name="estado" placeholder="Estado" required>
+                <input type="text" name="codigo_postal" placeholder="Código Postal" required>
+                <input type="text" name="pais" placeholder="País" required>
+                <div class="botones">
+                    <input type="button" value="VOLVER" class="boton-volver" onclick="window.location='perfil.php';">
+                    <input type="submit" value="AGREGAR" class="boton-continuar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="js/barras de navegacion.js"></script>
+</body>
+
+</html>

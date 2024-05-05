@@ -27,7 +27,7 @@
             <a href="nosotros.html" id="link-nosotros"><img src="img/NOSOTROS.svg" alt="Image 5" id="img-nosotros"/></a>
         </div>
         <div class="Iconos">
-            <a href="carrito.html"><img src="img/bolsa-de-la-compra 1.svg" alt="Image 7" /></a>
+            <a href="carrito.php"><img src="img/bolsa-de-la-compra 1.svg" alt="Image 7" /></a>
             <a href="<?= $enlaceUsuario ?>"><img src="img/usuario 1.svg" alt="Usuario" /></a>
         </div>
         </div>

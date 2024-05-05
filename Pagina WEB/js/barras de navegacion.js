@@ -66,7 +66,6 @@ function cambiarImagenNavegacion() {
                 document.getElementById('chat-contenedor').innerHTML = html;
             })
             .catch(error => {
-                console.error('Error al cargar el botón de chat:', error);
             });
     }
 
