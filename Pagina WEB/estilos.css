@@ -203,6 +203,13 @@ h3 {
   font-family: serif;
   line-height: 0.1;
 }
+.Redes .Paginas a{
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+
+}
+
 /* nosotros.html */
 .nosotros {
   display: flex;
