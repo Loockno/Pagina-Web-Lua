@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistente Mezcalion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .chat-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            height: 300px;
+            overflow-y: scroll;
+        }
+        .input-box {
+            display: flex;
+        }
+        .input-box textarea {
+            width: 80%;
+            height: 50px;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        .input-box button {
+            width: 20%;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chat-box" id="chat-box">
+            <!-- Aquí se mostrarán las conversaciones -->
+        </div>
+        <div class="input-box">
+            <textarea id="user-input" placeholder="Escribe tu pregunta..."></textarea>
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+    <script src="js/chat.js"></script>
+</body>
+</html>
