@@ -54,35 +54,53 @@
             <?php endif; ?>
         </section>
 
-
         <section class="formulario-pago">
             <h1 class="titulo-pago">Pago</h1>
             <?php if (isset($_SESSION['Numero_tarjeta']) && !empty($_SESSION['Numero_tarjeta'])): ?>
                 <p><strong>Tipo de Tarjeta:</strong> <?php echo htmlspecialchars($_SESSION['Tipo']); ?></p>
-                <p><strong>Número de Tarjeta:</strong> <?php echo htmlspecialchars($_SESSION['Numero_tarjeta']); ?></p>
+                <p><strong>Número de Tarjeta:</strong> 
+                    <span id="num-tarjeta-censurado">**** **** **** <?php echo substr(htmlspecialchars($_SESSION['Numero_tarjeta']), -4); ?></span>
+                    <button onclick="toggleCensura('num-tarjeta-censurado', '<?php echo htmlspecialchars($_SESSION['Numero_tarjeta']); ?>')">
+                        <img src="img/ojo.png" alt="Toggle Visibilidad" class="icono-ojo">
+                    </button>
+                </p>
                 <p><strong>Nombre en la Tarjeta:</strong> <?php echo htmlspecialchars($_SESSION['Nombre_tarjeta']); ?></p>
                 <p><strong>Fecha de Expiración:</strong> <?php echo htmlspecialchars($_SESSION['Fecha_expiracion']); ?></p>
-                <p><strong>CVV:</strong> <?php echo htmlspecialchars($_SESSION['CVV']); ?></p>
+                <p><strong>CVV:</strong> 
+                    <span id="cvv-censurado">***</span>
+                    <button onclick="toggleCensura('cvv-censurado', '<?php echo htmlspecialchars($_SESSION['CVV']); ?>')">
+                        <img src="img/ojo.png" alt="Toggle Visibilidad" class="icono-ojo">
+                    </button>
+                </p>
                 <div class="botones-pago">
-                    <input type="button" value="ELIMINAR" class="boton-eliminar-pago"
-                        onclick="window.location='eliminar-pago.php';">
-                    <input type="button" value="EDITAR" class="boton-editar-pago"
-                        onclick="window.location='editar-pago.php';">
+                    <input type="button" value="ELIMINAR" class="boton-eliminar-pago" onclick="window.location='eliminar-pago.php';">
+                    <input type="button" value="EDITAR" class="boton-editar-pago" onclick="window.location='editar-pago.php';">
                 </div>
             <?php else: ?>
                 <p>No hay información de pago agregada.</p>
                 <div class="botones-pago">
-                    <input type="button" value="AGREGAR" class="boton-agregar-pago"
-                        onclick="window.location='agregar-pago.html';">
+                    <input type="button" value="AGREGAR" class="boton-agregar-pago" onclick="window.location='agregar-pago.html';">
                 </div>
             <?php endif; ?>
         </section>
-
-
     </div>
     <div id="chat-contenedor"></div>
     <footer></footer>
     <script src="js/barras de navegacion.js"></script>
+    <script>
+        function toggleCensura(id, valor) {
+            const elemento = document.getElementById(id);
+            if (elemento.textContent.includes('*')) {
+                elemento.textContent = valor;
+            } else {
+                if (id === 'num-tarjeta-censurado') {
+                    elemento.textContent = '**** **** **** ' + valor.slice(-4);
+                } else if (id === 'cvv-censurado') {
+                    elemento.textContent = '***';
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
